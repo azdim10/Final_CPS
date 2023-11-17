@@ -1,0 +1,122 @@
+.feedback {
+  max-width: 320px;
+  min-height: 676px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  animation-name: menuOpenFed;
+  animation-duration: 1s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+@keyframes menuOpenFed {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 0;
+  }
+}
+.feedback_inputs {
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  padding-left: 16px;
+  border-radius: 8px;
+  min-height: 48px;
+  min-width: 288px;
+  border: 1px solid #eaeaea;
+}
+.feedback_input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.feedback_description {
+  color: #7e7e82;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  max-width: 288px;
+  margin: 16px 16px 16px;
+}
+.feedback_description-link {
+  text-decoration: none;
+  color: #ff3e79;
+}
+.feedback_input-text {
+  vertical-align: top;
+  min-height: 118px;
+}
+
+.feedback_title {
+  color: #1b1c21;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  position: relative;
+  top: 34px;
+  left: 12px;
+}
+.feedback_btn {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+}
+.hidden {
+  display: none;
+}
+.feedback_highlight {
+  max-height: 40px;
+  position: absolute;
+  top: 96px;
+}
+.feedback_button {
+  position: relative;
+  left: 196px;
+  bottom: 5px;
+  max-width: 114px;
+}
+.feedback_btn {
+  position: absolute;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+@media screen and (min-width: 768px) {
+  .feedback {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    min-height: 940px;
+    min-width: 440px;
+    justify-content: unset;
+    overflow: visible;
+  }
+  .feedback_btn {
+    margin-left: -85px;
+  }
+  .feedback_title {
+    top: 7px;
+    left: 30px;
+  }
+  .feedback_highlight {
+    top: 26px;
+  }
+  .feedback_input {
+    align-items: unset;
+    margin-left: 32px;
+  }
+  .feedback_description {
+    min-width: 376px;
+    margin-left: 32px;
+  }
+  .feedback_button {
+    left: 300px;
+  }
+}

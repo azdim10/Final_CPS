@@ -1,0 +1,25 @@
+.title {
+  display: flex;
+  flex-direction: row;
+}
+.title_hightlight {
+  margin-top: 24px;
+}
+.title_text {
+  margin-left: 16px;
+  margin-bottom: 0px;
+  font-family: 'TT lakes';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+@media (min-width: 1121px) {
+  .title_text {
+    margin-top: 42px;
+    margin-left: 30px;
+  }
+  .title_hightlight {
+    margin-top: 42px;
+  }
+}

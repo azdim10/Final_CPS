@@ -1,0 +1,50 @@
+.slideMenu {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  overflow: auto;
+  padding-left: 25px;
+  scrollbar-width: none;
+  font-size: 16px;
+}
+
+.slideMenu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slideMenu__button-link {
+  text-decoration: none;
+  color: #737382;
+  display: flex;
+  /* font-size: 16px; */
+  white-space: nowrap;
+  justify-content: center;
+  padding: 8px 9px 8px 9px;
+}
+
+.slideMenu__button {
+  display: flex;
+  font-size: 16px;
+  font-family: "TT lakes";
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  border: 2px solid transparent;
+}
+
+.slideMenu__button:hover {
+  border-color: #b8ffec;
+  border-radius: 6px;
+  background: #fff;
+}
+
+@media (min-width: 1121px) {
+  .slideMenu {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .slideMenu__button-link {
+    padding: 5px 17px 5px 17px;
+  }
+}/*# sourceMappingURL=slidemenu.css.map */

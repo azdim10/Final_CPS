@@ -1,0 +1,69 @@
+.application {
+  max-width: 320px;
+  min-height: 676px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  overflow: hidden;
+  animation-name: menuOpenApp;
+  animation-duration: 1s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+
+@keyframes menuOpenApp {
+  from {
+    right: -500px;
+  }
+  to {
+    right: 0;
+  }
+}
+.application_button {
+  position: relative;
+  left: 196px;
+  bottom: 5px;
+  max-width: 114px;
+}
+
+.application_btn {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  border: none;
+  background-color: white;
+}
+
+.application_title {
+  position: absolute;
+  top: 77px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .application {
+    padding-top: 0;
+    min-height: 676px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    min-height: 940px;
+    min-width: 440px;
+    justify-content: unset;
+    overflow: visible;
+  }
+  .application_button {
+    left: 300px;
+  }
+  .application_btn {
+    margin-left: -85px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .application_title {
+    position: relative;
+    top: 7px;
+  }
+}/*# sourceMappingURL=application.css.map */

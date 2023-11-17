@@ -1,0 +1,37 @@
+.description {
+  max-width: 288px;
+  margin-left: 16px;
+}
+
+.description_text {
+  color: #1b1c21;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.description_link-button {
+  display: flex;
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+}
+
+.description_img {
+  position: relative;
+  top: 13px;
+  right: 160px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    min-width: 421px;
+  }
+  .description_img {
+    position: unset;
+  }
+}/*# sourceMappingURL=description.css.map */

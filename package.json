@@ -32,7 +32,7 @@
     "autoprefixer": "9.6.1",
     "babel-loader": "8.0.6",
     "copy-webpack-plugin": "5.1.0",
-    "css-loader": "3.2.0",
+    "css-loader": "^3.2.0",
     "file-loader": "4.2.0",
     "gh-pages": "2.1.1",
     "html-webpack-plugin": "3.2.0",
@@ -53,5 +53,8 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "dependencies": {
+    "style-loader": "^3.3.3"
   }
 }

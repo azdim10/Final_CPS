@@ -1,0 +1,125 @@
+.hidden {
+  display: none;
+}
+.page {
+  z-index: 60;
+  margin: 0;
+}
+.smooth {
+  filter: blur(20px);
+}
+.head_menu {
+  padding: 24px 16px 32px 16px;
+}
+.head_menu-link {
+  display: flex;
+  justify-content: center;
+}
+.head_menu {
+  display: flex;
+  gap: 16px;
+}
+.head_menu-group {
+  margin-right: 80px;
+}
+.head_btn {
+  border: none;
+  background-color: white;
+}
+
+.burger_menu {
+  min-width: 320px;
+  font-family: 'TT Lakes';
+  margin: 0;
+  min-height: 100%;
+  z-index: 100;
+  animation-name: menuOpen;
+  animation-duration: 1s;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+.burger_menu.active {
+  animation-name: menuClose;
+  animation-duration: 1s;
+}
+.burger_anim {
+  display: block;
+}
+
+@keyframes menuOpen {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes menuClose {
+  from {
+    left: 0;
+  }
+  to {
+    left: -500px;
+  }
+}
+.list_select {
+  list-style-type: none;
+}
+.list_select-element {
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+  margin-top: 0;
+}
+.list_select-element:hover {
+  .list_select-highlight {
+    visibility: visible;
+  }
+}
+.list_select-highlight {
+  visibility: hidden;
+  margin-right: 16px;
+}
+.burger_bottom {
+  margin-left: 16px;
+}
+.burger_bottom-menu-pic {
+  margin-right: 16px;
+}
+.burger_bottom-number {
+  color: #1b1c21;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+.burger_bottom-lang {
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-decoration: none;
+}
+.burger_bottom-lang:hover {
+  color: #7e7e82;
+}
+.burger_menu-laptop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .burger_menu {
+    position: fixed;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .burger_menu-laptop {
+    display: block;
+  }
+  .burger_menu {
+    position: unset;
+    box-shadow: none;
+  }
+}

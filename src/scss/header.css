@@ -1,0 +1,164 @@
+.upperMenu_mob-link {
+  margin-top: 6px;
+}
+
+.upperMenu_mob-link_logo {
+  background-position: center;
+}
+
+.upperMenu_mob {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upperMenu_mob-link {
+  margin-top: 6px;
+}
+
+.upperMenu_mob-link_logo {
+  background-position: center;
+}
+
+.upperMenu_burger-button {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+.upperMenu_button-check {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+.upperMenu_button-app {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  .upperMenu_mob-link_logo-hide {
+    display: none;
+  }
+  .upperMenu_mob-text {
+    display: none;
+  }
+  .upperMenu_mob-divider-left {
+    display: none;
+  }
+  .upperMenu_mob-left {
+    display: flex;
+    margin-left: 16px;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .upperMenu_mob-right {
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .upperMenu_mob-left-burger {
+    margin-right: 16px;
+  }
+  .upperMenu_mob-link_logo {
+    margin-left: 16px;
+  }
+  .upperMenu_mob-divider-right {
+    margin-right: 4px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1120px) {
+  .upperMenu_mob-text {
+    display: none;
+  }
+  .upperMenu_mob {
+    justify-content: space-between;
+  }
+  .upperMenu_mob-left {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  .upperMenu_mob-left-burger {
+    margin-right: 20px;
+  }
+  .upperMenu_mob-divider-left {
+    max-height: 32px;
+    margin-right: 20px;
+    padding-top: 9px;
+  }
+  .upperMenu_mob-right {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 40px;
+    justify-content: center;
+  }
+  .upperMenu_mob-divider-right {
+    max-height: 32px;
+    padding-top: 9px;
+  }
+  .upperMenu_mob-link_logo {
+    margin-left: 16px;
+  }
+  .upperMenu_mob-link_logo-hide:last-child {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1121px) {
+  .upperMenu_mob-left {
+    display: none;
+  }
+  .upperMenu_mob-divider-right {
+    display: none;
+  }
+  .upperMenu_mob-link {
+    margin-top: 0px;
+    display: none;
+  }
+  .upperMenu_mob {
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex-direction: row-reverse;
+    z-index: 1;
+    margin-right: 32px;
+    margin-top: 42px;
+  }
+  .upperMenu_mob-link-deckstop {
+    display: flex;
+    float: left;
+    text-decoration: none;
+    z-index: 1;
+    margin-right: 32px;
+  }
+  .upperMenu_mob-link-deckstop:last-child {
+    margin-right: 0;
+  }
+  .upperMenu_mob-text {
+    display: flex;
+    float: left;
+    z-index: 1;
+    margin-right: 8px;
+    color: #1b1c21;
+    text-align: right;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0, 2px;
+  }
+}/*# sourceMappingURL=header.css.map */

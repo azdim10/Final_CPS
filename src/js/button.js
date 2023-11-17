@@ -1,0 +1,40 @@
+const burgerElements = document.querySelector('.burger_menu')
+const windowAdept = window.matchMedia('(min-width:760px)')
+const mainElements = document.querySelector('.main')
+const headerElements = document.querySelector('.upperMenu_mob-left')
+const headersElement = document.querySelector('.upperMenu_mob-right')
+const footerElements = document.querySelector('.footer')
+const buttonShowBurger = document.querySelector('.upperMenu_burger-button')
+const buttonHideBurger = document.querySelector('.head_btn')
+const buttonShowApp = document.querySelector('.upperMenu_button-app')
+if (windowAdept.matches === false) {
+  buttonShowBurger.addEventListener('click', function () {
+    mainElements.classList.add('hidden')
+    footerElements.classList.add('hidden')
+    headersElement.classList.add('hidden')
+    headerElements.classList.add('hidden')
+    burgerElements.classList.remove('hidden')
+  })
+  buttonHideBurger.addEventListener('click', function () {
+    mainElements.classList.remove('hidden')
+    footerElements.classList.remove('hidden')
+    headersElement.classList.remove('hidden')
+    headerElements.classList.remove('hidden')
+    burgerElements.classList.add('hidden')
+  })
+} else {
+  buttonShowBurger.addEventListener('click', function () {
+    mainElements.classList.add('smooth')
+    footerElements.classList.add('smooth')
+    headersElement.classList.add('smooth')
+    headerElements.classList.add('smooth')
+    burgerElements.classList.remove('hidden')
+  })
+  buttonHideBurger.addEventListener('click', function () {
+    mainElements.classList.remove('smooth')
+    footerElements.classList.remove('smooth')
+    headersElement.classList.remove('smooth')
+    headerElements.classList.remove('smooth')
+    burgerElements.classList.add('hidden')
+  })
+}

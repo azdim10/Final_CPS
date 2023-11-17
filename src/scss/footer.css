@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 312px;
+  margin: auto;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.footer_text {
+  color: #7e7e82;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+}
+
+.footer_description {
+  color: #7e7e82;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0;
+}
+
+.footer_link {
+  color: #7e7e82;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+}/*# sourceMappingURL=footer.css.map */
